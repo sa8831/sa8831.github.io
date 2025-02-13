@@ -4,31 +4,45 @@ body {
     color: #9D8189;
     font-family: Calibri, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     text-align: center;
+    background-image: url('stars.png'), url('ribbons.png'); /* Use images for stars and ribbons */
+    background-repeat: repeat, repeat-x;  /* Repeating stars and ribbons */
+    background-size: 40px, 100% auto; /* Star size and ribbon stretch across */
+    background-position: center, top; /* Center stars and top ribbons */
 }
 
 /* Banner Styling */
 .banner {
     background-color: #FFCAD4;
-    padding: 20px;
-    border-radius: 0 0 10px 10px; /* Rounded bottom edges */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    padding: 20px 0;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Headings */
-h1, h2, h4, h5 {
+.banner h1 {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    color: #9D8189;
+    margin: 0;
+}
+
+/* Other Styling (unchanged) */
+h4, h5 {
     font-family: Georgia, serif;
     color: #9D8189;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin: 0;
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
-/* Paragraphs */
+h5 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
 p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -36,12 +50,10 @@ p {
     margin: 0 auto 20px auto;
 }
 
-/* Centered Content */
 iframe {
     margin: 20px 0;
 }
 
-/* Section Styling */
 .section {
     background-color: #FFCAD4;
     padding: 20px;
@@ -51,7 +63,6 @@ iframe {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Headings inside sections */
 .section h2 {
     font-size: 1.8rem;
     color: #F4ACB7;
