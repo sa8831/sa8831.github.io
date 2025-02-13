@@ -4,69 +4,33 @@ body {
     color: #9D8189;
     font-family: Calibri, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     text-align: center;
-    position: relative;
-}
-
-/* Stars Background */
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Ccircle cx="50" cy="50" r="5" fill="%23F4ACB7" /%3E%3Ccircle cx="20" cy="30" r="3" fill="%23F4ACB7" /%3E%3Ccircle cx="80" cy="60" r="4" fill="%23F4ACB7" /%3E%3Ccircle cx="40" cy="70" r="2" fill="%23F4ACB7" /%3E%3Ccircle cx="70" cy="20" r="3" fill="%23F4ACB7" /%3E%3Ccircle cx="90" cy="90" r="2" fill="%23F4ACB7" /%3E%3Ccircle cx="10" cy="50" r="2" fill="%23F4ACB7" /%3E%3Ccircle cx="60" cy="10" r="4" fill="%23F4ACB7" /%3E%3Ccircle cx="30" cy="80" r="3" fill="%23F4ACB7" /%3E%3C/svg%3E');
-    background-repeat: repeat;
-    z-index: -1;
-}
-
-/* Ribbon Background */
-body::after {
-    content: '';
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    background: linear-gradient(45deg, rgba(244, 172, 183, 0.5) 25%, transparent 25%) -50px 0, 
-                linear-gradient(-45deg, rgba(244, 172, 183, 0.5) 25%, transparent 25%) -50px 0;
-    background-size: 100px 100px;
-    z-index: -2;
+    position: relative; /* To ensure positioning of stars and ribbons */
+    overflow: hidden; /* Prevents scrollbars */
 }
 
 /* Banner Styling */
 .banner {
     background-color: #FFCAD4;
-    padding: 20px 0;
-    margin: 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.banner h1 {
-    font-family: Georgia, serif;
-    font-size: 3rem;
-    color: #9D8189;
-    margin: 0;
-}
-
-/* Other Styling (unchanged) */
-h4, h5 {
-    font-family: Georgia, serif;
-    color: #9D8189;
-}
-
-h4 {
-    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 0 0 10px 10px; /* Rounded bottom edges */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-h5 {
-    font-size: 1.2rem;
-    margin-top: 10px;
+/* Headings */
+h1, h2, h4, h5 {
+    font-family: Georgia, serif;
+    color: #9D8189;
 }
 
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Paragraphs */
 p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -74,10 +38,12 @@ p {
     margin: 0 auto 20px auto;
 }
 
+/* Centered Content */
 iframe {
     margin: 20px 0;
 }
 
+/* Section Styling */
 .section {
     background-color: #FFCAD4;
     padding: 20px;
@@ -87,10 +53,54 @@ iframe {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Headings inside sections */
 .section h2 {
     font-size: 1.8rem;
     color: #F4ACB7;
     margin-bottom: 10px;
+}
+
+/* Tiny Stars Background */
+body {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.6) 20%, transparent 20%), 
+                      radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 20%);
+    background-size: 10px 10px, 15px 15px; /* Tiny stars pattern */
+    background-position: 0 0, 5px 5px;
+}
+
+/* Flowing Ribbons */
+.ribbon {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: 0;
+    animation: flowRibbons 10s infinite linear;
+}
+
+.ribbon-1 {
+    background-color: #F4ACB7; /* Pastel Red */
+    animation-delay: 0s;
+}
+
+.ribbon-2 {
+    background-color: #A9E5A9; /* Pastel Green */
+    animation-delay: 2s;
+}
+
+.ribbon-3 {
+    background-color: #A9C9E5; /* Pastel Blue */
+    animation-delay: 4s;
+}
+
+/* Ribbons Flow Animation */
+@keyframes flowRibbons {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 /* Responsive Design */
