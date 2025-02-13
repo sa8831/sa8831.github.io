@@ -1,12 +1,12 @@
 /* General Styling */
 body {
-    background-color: #FFE5D9; /* Keep beige background */
+    background-color: #FFE5D9;
     color: #9D8189;
     font-family: Calibri, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    position: relative; /* For positioning stars and ribbons */
+    position: relative; /* To ensure positioning of stars and ribbons */
     overflow: hidden; /* Prevents scrollbars */
 }
 
