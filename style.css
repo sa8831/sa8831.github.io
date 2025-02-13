@@ -1,18 +1,16 @@
 /* General Styling */
 body {
-    background-color: #FFE5D9;
-    color: #9D8189;
-    font-family: Calibri, sans-serif;
+    background-color: #FFE5D9; /* Soft pink background */
+    color: #9D8189; /* Muted mauve color for text */
+    font-family: 'Calibri', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    position: relative; /* To ensure positioning of stars and ribbons */
-    overflow: hidden; /* Prevents scrollbars */
 }
 
 /* Banner Styling */
 .banner {
-    background-color: #FFCAD4;
+    background-color: #FFCAD4; /* Soft pink shade */
     padding: 20px;
     border-radius: 0 0 10px 10px; /* Rounded bottom edges */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -21,13 +19,21 @@ body {
 
 /* Headings */
 h1, h2, h4, h5 {
-    font-family: Georgia, serif;
-    color: #9D8189;
+    font-family: 'Georgia', serif;
+    color: #9D8189; /* Muted mauve text */
 }
 
+/* Main Heading */
 h1 {
     font-size: 2.5rem;
-    margin: 0;
+    margin: 20px 0;
+    color: #F4ACB7; /* A soft pink color for the main heading */
+}
+
+/* Sub Headings */
+h4, h5 {
+    font-size: 1.4rem;
+    color: #F4ACB7; /* Pinkish shade for subheadings */
 }
 
 /* Paragraphs */
@@ -36,16 +42,18 @@ p {
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 20px auto;
+    color: #9D8189;
 }
 
 /* Centered Content */
 iframe {
     margin: 20px 0;
+    border-radius: 10px; /* Rounded corners for iframe */
 }
 
 /* Section Styling */
 .section {
-    background-color: #FFCAD4;
+    background-color: #FFCAD4; /* Soft pink */
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
@@ -56,51 +64,18 @@ iframe {
 /* Headings inside sections */
 .section h2 {
     font-size: 1.8rem;
-    color: #F4ACB7;
+    color: #F4ACB7; /* Soft pink color for section titles */
     margin-bottom: 10px;
 }
 
-/* Tiny Stars Background */
-body {
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.6) 20%, transparent 20%), 
-                      radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 20%);
-    background-size: 10px 10px, 15px 15px; /* Tiny stars pattern */
-    background-position: 0 0, 5px 5px;
+/* Styling for Links (if any) */
+a {
+    color: #F4ACB7;
+    text-decoration: none;
 }
 
-/* Flowing Ribbons */
-.ribbon {
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    top: 0;
-    left: 0;
-    animation: flowRibbons 10s infinite linear;
-}
-
-.ribbon-1 {
-    background-color: #F4ACB7; /* Pastel Red */
-    animation-delay: 0s;
-}
-
-.ribbon-2 {
-    background-color: #A9E5A9; /* Pastel Green */
-    animation-delay: 2s;
-}
-
-.ribbon-3 {
-    background-color: #A9C9E5; /* Pastel Blue */
-    animation-delay: 4s;
-}
-
-/* Ribbons Flow Animation */
-@keyframes flowRibbons {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
+a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
