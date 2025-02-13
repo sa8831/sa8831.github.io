@@ -1,5 +1,3 @@
-// Add this JavaScript code in a <script> tag at the end of the HTML or in a separate .js file
-
 window.onload = function() {
     // Create a container for the stars
     const starContainer = document.createElement('div');
