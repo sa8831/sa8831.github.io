@@ -6,42 +6,13 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    position: relative; /* To position elements over the background */
-}
-
-/* Add the cute stars and flowing ribbons */
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-        url('https://www.transparenttextures.com/patterns/white-dots.png') repeat,
-        linear-gradient(90deg, #F4ACB7, #FFCAD4, #A7D8D3, #9D8189); /* Ribbon gradient */
-    pointer-events: none; /* Prevent interaction with background */
-    z-index: -1; /* Place behind the content */
-}
-
-/* Stars in light beige */
-.stars {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0) 30%);
-    background-size: 10px 10px; /* Tiny star pattern */
-    pointer-events: none;
-    z-index: -2;
 }
 
 /* Banner Styling */
 .banner {
     background-color: #FFCAD4;
     padding: 20px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px; /* Rounded bottom edges */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
@@ -85,23 +56,6 @@ iframe {
     font-size: 1.8rem;
     color: #F4ACB7;
     margin-bottom: 10px;
-}
-
-/* Ribbons Animation */
-@keyframes ribbon {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
-.ribbon {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    width: 200%;
-    height: 3px;
-    background: linear-gradient(90deg, #F4ACB7, #FFCAD4, #A7D8D3, #9D8189);
-    animation: ribbon 20s linear infinite;
-    z-index: -1;
 }
 
 /* Responsive Design */
