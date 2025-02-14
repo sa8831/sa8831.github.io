@@ -4,35 +4,15 @@ window.onload = function() {
     starContainer.id = 'starContainer';
     document.body.appendChild(starContainer);
 
-    // Number of stars
-    const starCount = 50;
+    // Number of stars per click
+    const starCount = 10; 
 
     // Function to generate random values for positions, sizes, and animation
     function randomizeStar() {
         return {
-            left: Math.random() * 100 + '%',          // Positioning the star randomly across the screen
-            top: Math.random() * 100 + '%',           // Positioning the star randomly across the screen
             size: Math.random() * 2 + 1 + 'px',      // Random size between 1px and 3px
             duration: Math.random() * 2 + 5 + 's',    // Random spinning duration between 5s and 7s
         };
-    }
-
-    // Create stars
-    for (let i = 0; i < starCount; i++) {
-        const star = document.createElement('div');
-        star.classList.add('star');
-        
-        const styles = randomizeStar();
-        star.style.position = 'absolute';
-        star.style.left = styles.left;
-        star.style.top = styles.top;
-        star.style.width = styles.size;
-        star.style.height = styles.size;
-        star.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; // Off-white color
-        star.style.borderRadius = '50%';
-        star.style.animation = `spin ${styles.duration} infinite linear`;
-        
-        starContainer.appendChild(star);
     }
 
     // Add the keyframe animation for spinning
@@ -44,4 +24,25 @@ window.onload = function() {
         }
     `;
     styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+
+    // Function to add stars where the user clicks
+    document.body.addEventListener('click', function(event) {
+        // Generate stars at the clicked position
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            
+            const styles = randomizeStar();
+            star.style.position = 'absolute';
+            star.style.left = `${event.clientX + Math.random() * 50 - 25}px`;  // Randomize position around the click
+            star.style.top = `${event.clientY + Math.random() * 50 - 25}px`;   // Randomize position around the click
+            star.style.width = styles.size;
+            star.style.height = styles.size;
+            star.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; // Off-white color
+            star.style.borderRadius = '50%';
+            star.style.animation = `spin ${styles.duration} infinite linear`;
+            
+            starContainer.appendChild(star);
+        }
+    });
 };
