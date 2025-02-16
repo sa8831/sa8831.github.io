@@ -107,6 +107,7 @@ iframe {
 }
 
 
+/* Rising Images */
 
 .rising-images {
     display: flex;
@@ -118,7 +119,7 @@ iframe {
 }
 
 .rising {
-    width: 400px; /* Adjust as needed */
+    width: 400px; 
     opacity: 0;
     transition: all 1s ease-out;
 }
