@@ -1,5 +1,4 @@
-/* For the Sideshow */
-
+// For the Sideshow 
 
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
@@ -26,7 +25,7 @@ setInterval(() => changeSlide(1), 5000);
 
 
 
-/* For the Rising Images */
+// For the Rising Images 
 
 document.addEventListener("DOMContentLoaded", function () {
     const risingImages = document.querySelectorAll(".rising");
