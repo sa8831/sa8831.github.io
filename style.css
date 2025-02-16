@@ -76,28 +76,17 @@ iframe {
     border-radius: 10px;
 }
 
-.slide {
-    display: none;
-    position: relative;
-}
-
-.slide img {
+.slide, .description {
     width: 100%;
+    display: none;
     border-radius: 10px;
 }
 
-.caption {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
+.description {
+    font-size: 1.2rem;
+    color: #9D8189;
     text-align: center;
-    width: 90%;
+    margin-top: 10px;
 }
 
 .prev, .next {
@@ -123,3 +112,4 @@ iframe {
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
