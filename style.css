@@ -109,22 +109,33 @@ iframe {
 
 
 
+
+
+
 .rising-images {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 100px auto;
     padding-bottom: 50px;
 }
 
 .rising {
-    width: 600px; /* Adjust size as needed */
+    width: 400px; /* Adjust as needed */
     opacity: 0;
-    transform: translateY(100px); /* Start below the viewport */
     transition: all 1s ease-out;
+}
+
+.left {
+    transform: translateX(-100px) translateY(100px); /* Left-side animation */
+}
+
+.right {
+    transform: translateX(100px) translateY(100px); /* Right-side animation */
 }
 
 .rising.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0) translateY(0);
 }

@@ -24,7 +24,6 @@ setInterval(() => changeSlide(1), 5000);
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const risingImages = document.querySelectorAll(".rising");
 
