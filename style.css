@@ -67,32 +67,19 @@ iframe {
 }
 
 
-
 .slideshow-container {
     position: relative;
-    max-width: 800px;
+    max-width: 500px; /* Adjust the width to make it smaller */
+    height: auto; /* Keeps aspect ratio */
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
 }
 
 .slide {
-    display: none;
-    text-align: center;
-}
-
-.slide img {
-    width: 100%;
+    width: 100%; /* Makes the image fit inside the container */
+    height: auto; /* Keeps the image proportionate */
     border-radius: 10px;
-}
-
-.caption {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    color: #9D8189;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Navigation buttons */
