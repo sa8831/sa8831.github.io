@@ -66,6 +66,8 @@ iframe {
     margin-bottom: 10px;
 }
 
+
+
 .slideshow-container {
     position: relative;
     max-width: 800px;
@@ -75,9 +77,27 @@ iframe {
 }
 
 .slide {
-    width: 100%;
     display: none;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
     border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
 }
 
 .prev, .next {

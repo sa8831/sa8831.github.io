@@ -15,8 +15,8 @@ function changeSlide(step) {
     showSlide(slideIndex);
 }
 
-// Automatically show the first slide
+// Show the first slide initially
 showSlide(slideIndex);
 
-// Optional: Auto-slide every 3 seconds
+// Auto-slide every 3 seconds (optional)
 setInterval(() => changeSlide(1), 3000);
