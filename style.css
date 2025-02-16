@@ -1,4 +1,4 @@
-/* General Styling */
+/* General Style of the website */
 body {
     background-color: #FFE5D9;
     color: #9D8189;
@@ -6,10 +6,9 @@ body {
     margin: 0;
     padding: 20px;
     text-align: center;
-    position: relative; /* Ensures that the stars are positioned relative to the body */
 }
 
-/* Banner Styling */
+/* Banner Style */
 .banner {
     background-color: #FFCAD4;
     padding: 20px 0;
@@ -106,9 +105,6 @@ iframe {
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-
 
 
 
