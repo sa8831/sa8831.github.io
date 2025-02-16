@@ -20,3 +20,21 @@ showSlide(slideIndex);
 
 // Optional: Auto-slide every 3 seconds
 setInterval(() => changeSlide(1), 5000);
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const risingImages = document.querySelectorAll(".rising");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.5 });
+
+    risingImages.forEach((img) => observer.observe(img));
+});
