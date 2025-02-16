@@ -56,15 +56,20 @@
     <div class="section">
         <h2>Slideshow</h2>
         <div class="slideshow-container">
-            <img class="slide" src="Process1.png" alt="Slide 1">
-            <p class="description">This is the first image description.</p>
+            <div class="slide">
+                <img src="Process1.png" alt="Slide 1">
+                <p class="caption">This is the first image description.</p>
+            </div>
+            <div class="slide">
+                <img src="Process2.png" alt="Slide 2">
+                <p class="caption">This is the second image description.</p>
+            </div>
+            <div class="slide">
+                <img src="Final_Drawing.png" alt="Slide 3">
+                <p class="caption">This is the third image description.</p>
+            </div>
     
-            <img class="slide" src="Process2.png" alt="Slide 2">
-            <p class="description">This is the second image description.</p>
-    
-            <img class="slide" src="Final_Drawing.png" alt="Slide 3">
-            <p class="description">This is the third image description.</p>
-    
+            <!-- Navigation buttons -->
             <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
             <button class="next" onclick="changeSlide(1)">&#10095;</button>
         </div>

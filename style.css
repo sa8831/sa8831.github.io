@@ -76,19 +76,26 @@ iframe {
     border-radius: 10px;
 }
 
-.slide, .description {
-    width: 100%;
+.slide {
     display: none;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
     border-radius: 10px;
 }
 
-.description {
-    font-size: 1.2rem;
-    color: #9D8189;
-    text-align: center;
+.caption {
     margin-top: 10px;
+    font-size: 1.1rem;
+    color: #9D8189;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Navigation buttons */
 .prev, .next {
     position: absolute;
     top: 50%;

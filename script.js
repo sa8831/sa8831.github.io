@@ -1,14 +1,11 @@
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
-const descriptions = document.getElementsByClassName("description");
 
 function showSlide(index) {
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-        descriptions[i].style.display = "none"; // Hide all descriptions
     }
     slides[index].style.display = "block";
-    descriptions[index].style.display = "block"; // Show corresponding description
 }
 
 function changeSlide(step) {
@@ -18,8 +15,8 @@ function changeSlide(step) {
     showSlide(slideIndex);
 }
 
-// Show first slide by default
+// Automatically show the first slide
 showSlide(slideIndex);
 
 // Optional: Auto-slide every 3 seconds
-setInterval(() => changeSlide(1), 3000);
+setInterval(() => changeSlide(1), 5000);
