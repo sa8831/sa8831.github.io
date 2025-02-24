@@ -39,8 +39,8 @@ let stories = [
     'It is a fictional world, but a world nonetheless.'
 ];
 
-let catDiv = document.getElementById('cat-div');
-let catText = document.getElementById('cat-text');
+let catDiv = document.getElementById('BigC-div');
+let catText = document.getElementById('BigC-text');
 let navButtons = document.getElementsByClassName('nav-btn');
 
 // Add scroll event for the whole HTML document and set changeText function as callback
