@@ -26,9 +26,9 @@ function scrollPage(){
 // Storytelling functionality
 let stories = [
     'Hello!',
-    'I am a cat, your storyteller.',
-    'I am here to help you understand the world.',
-    'It is a fictional world, but a world nonetheless.'
+    'I travel through the universe, shaping planets and life itself!',
+    'Did you know? I help plants grow, give animals energy, and even form diamonds under pressure',
+    'I never disappear! I just keep moving—from the air, to plants, to animals, and back again!'
 ];
 
 let catDiv = document.getElementById('BigC-div');
