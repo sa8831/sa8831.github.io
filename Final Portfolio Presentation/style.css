@@ -1,4 +1,12 @@
 /* ---------------------
+  Font Face (Arcane Nine)
+---------------------- */
+@font-face {
+  font-family: 'ArcaneNine';
+  src: url('fonts/arcane_nine.otf') format('opentype');
+}
+
+/* ---------------------
   Base Layout & Font
 ---------------------- */
 body {

@@ -61,26 +61,26 @@ musicToggle.addEventListener("click", () => {
 });
 
 // =======================
-// Character Scroll Animation
+// Character Scroll Animation (Improved)
 // =======================
 const jayce = document.querySelector(".piltover-silhouette");
 const jinx = document.querySelector(".zaun-silhouette");
 
 window.addEventListener("scroll", () => {
-  const trigger = window.innerHeight * 0.75;
+  const triggerBottom = window.innerHeight * 0.75;
 
-  if (body.classList.contains("piltover-mode")) {
-    const jaycePos = jayce.getBoundingClientRect().top;
-    if (jaycePos < trigger && jaycePos > -300) {
+  if (body.classList.contains("piltover-mode") && jayce) {
+    const jayceTop = jayce.getBoundingClientRect().top;
+    if (jayceTop < triggerBottom && jayceTop > -300) {
       jayce.classList.add("revealed");
     } else {
       jayce.classList.remove("revealed");
     }
   }
 
-  if (body.classList.contains("zaun-mode")) {
-    const jinxPos = jinx.getBoundingClientRect().top;
-    if (jinxPos < trigger && jinxPos > -300) {
+  if (body.classList.contains("zaun-mode") && jinx) {
+    const jinxTop = jinx.getBoundingClientRect().top;
+    if (jinxTop < triggerBottom && jinxTop > -300) {
       jinx.classList.add("revealed");
     } else {
       jinx.classList.remove("revealed");
