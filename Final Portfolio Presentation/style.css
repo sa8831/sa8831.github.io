@@ -18,6 +18,47 @@ body {
 }
 
 /* ---------------------
+  Logo Toggle and Music Button
+---------------------- */
+.logo-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.logo-toggle button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.logo-toggle img {
+  width: 24px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.logo-toggle img:hover {
+  transform: scale(1.1);
+}
+
+#music-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: transform 0.2s ease;
+}
+
+#music-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* ---------------------
   Intro Message
 ---------------------- */
 #intro-note {
@@ -29,6 +70,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
 }
+
 body.zaun-mode #intro-note {
   background-color: #1a1a1a;
   color: #00BFFF;
@@ -59,6 +101,7 @@ body.zaun-mode {
   margin: 40px auto 0;
   letter-spacing: 2px;
 }
+
 .subtitle {
   text-align: center;
   font-size: 18px;
@@ -74,6 +117,7 @@ body.zaun-mode {
   overflow: hidden;
   margin-bottom: 40px;
 }
+
 .piltover-silhouette,
 .zaun-silhouette {
   position: absolute;
@@ -85,6 +129,7 @@ body.zaun-mode {
 .piltover-silhouette {
   left: -400px;
 }
+
 .zaun-silhouette {
   right: -400px;
 }
@@ -108,6 +153,7 @@ body.zaun-mode .zaun-silhouette.revealed {
   padding: 20px;
   border-radius: 12px;
 }
+
 .project-preview {
   position: relative;
   overflow: hidden;
@@ -116,6 +162,7 @@ body.zaun-mode .zaun-silhouette.revealed {
   border: 2px solid #ccc;
   border-radius: 12px;
 }
+
 .project-preview iframe {
   width: 100%;
   height: 100%;
@@ -124,9 +171,11 @@ body.zaun-mode .zaun-silhouette.revealed {
   filter: brightness(0.6);
   transition: filter 0.3s ease;
 }
+
 .project-preview:hover iframe {
   filter: brightness(1);
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -144,6 +193,7 @@ body.zaun-mode .zaun-silhouette.revealed {
   transition: opacity 0.3s ease;
   text-shadow: 0 0 10px black;
 }
+
 .project-preview:hover .overlay {
   opacity: 1;
 }
@@ -190,6 +240,7 @@ body.zaun-mode .zaun-silhouette.revealed {
   font-size: 14px;
   color: #333;
 }
+
 body.zaun-mode #credits {
   background-color: #111;
   color: #ccc;

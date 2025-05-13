@@ -51,17 +51,17 @@ musicToggle.addEventListener("click", () => {
       zaunMusic.play();
     }
     isMusicPlaying = true;
-    musicToggle.textContent = "🔇 Pause Music";
+    musicToggle.textContent = "🔇";
   } else {
     piltoverMusic.pause();
     zaunMusic.pause();
     isMusicPlaying = false;
-    musicToggle.textContent = "🎵 Music";
+    musicToggle.textContent = "🎵";
   }
 });
 
 // =======================
-// Character Scroll Animation (Improved)
+// Character Scroll Animation
 // =======================
 const jayce = document.querySelector(".piltover-silhouette");
 const jinx = document.querySelector(".zaun-silhouette");
