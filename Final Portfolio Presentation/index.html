@@ -9,11 +9,23 @@
 </head>
 <body class="piltover-mode">
 
+  <!-- Intro Note -->
+  <div id="intro-note">
+    <p>
+      👋 Hey there! Toggle one of the logos above to switch between light and dark mode.<br>
+      The one on the left (⚙️ Piltover Mode) is light mode — elegant and calm.<br>
+      The one on the right (💥 Zaun Mode) is dark mode — chaotic and wild.<br>
+      Each comes with its own little surprise... 👀<br>
+      And don’t forget — there’s a music button at the top that plays different tracks depending on your vibe!
+    </p>
+  </div>
+
   <!-- Top Banner -->
   <header id="top-banner">
     <div class="logo-toggle">
-      <button id="piltover-btn"><img src="piltover-logo.png" alt="Piltover Mode"></button>
-      <button id="zaun-btn"><img src="zaun-logo.png" alt="Zaun Mode"></button>
+      <button id="piltover-btn"><img src="images/piltover.svg" alt="Piltover Mode"></button>
+      <button id="zaun-btn"><img src="images/zaun.svg" alt="Zaun Mode"></button>
+      <button id="music-toggle" aria-label="Toggle Music">🎵 Music</button>
     </div>
     <nav class="nav-links">
       <a href="#project1">Project 1</a>
@@ -25,35 +37,77 @@
 
   <!-- Name and Subtitle -->
   <section id="intro">
-    <img src="shamsa-alremeithi-title.png" alt="Shamsa Alremeithi" class="arcane-title">
+    <h1 class="arcane-title">Shamsa Alremeithi</h1>
     <p class="subtitle">Aspiring Interactive Media Major</p>
   </section>
 
   <!-- Animated Character Silhouettes -->
   <section id="character-silhouette">
-    <img src="jayce-silhouette.png" class="piltover-silhouette" alt="Jayce">
-    <img src="jinx-silhouette.png" class="zaun-silhouette" alt="Jinx">
+    <img src="images/jayce.svg" class="piltover-silhouette" alt="Jayce">
+    <img src="images/jinx.svg" class="zaun-silhouette" alt="Jinx">
   </section>
 
   <!-- Projects -->
-  <section id="portfolio-grid">
-    <div class="project" id="project1">
-      <iframe src="https://sa8831.github.io/30MFF%20Film/" title="The Shining Star"></iframe>
-      <p>Sketching through university life—where every line tells a story. This piece, النجم الساطع (Al Najm Al Saa'ta3) translated to "The Shining Star," reflects the brilliance found in learning, growth, and creativity. </p>
-    </div>
-    <div class="project" id="project2">
-      <iframe src="https://sa8831.github.io/Comic/" title="Beryllium oxide (BeO)"></iframe>
-      <p> The comic is about the developing friendship between two elements from the periodic table, Berrilium (Be) and Oxygen (O), portrayed as high school students. Berrilium, a toxic element that struggles to bond with others, reflects the challenges of feeling isolated. In contrast, Oxygen is a highly reactive element that bonds effortlessly.</p>
-    </div>
-    <div class="project" id="project3">
-      <iframe src="https://sa8831.github.io/AudioProject/" title="The Treasure Trail Across Borders"></iframe>
-      <p>An online interactive treasure hunt guided by a pirate character who travels across various countries in search of hidden treasure. Users begin in the UAE and journey through Pakistan, Spain, and France, uncovering audio clues that guide them to the next destination. </p>
-    </div>
-    <div class="project" id="project4">
-      <iframe src="https://sa8831.github.io/Video_Project/" title="The Final Exam"></iframe>
-      <p>The video concept involves a classroom environment, following the experience of sitting for an important test and achieving mixed outcomes based on the responses of the audience.</p>
-    </div>
-  </section>
+  <div class="project" id="project1">
+    <a href="https://sa8831.github.io/30MFF%20Film/" target="_blank">
+      <div class="project-preview">
+        <iframe src="https://sa8831.github.io/30MFF%20Film/" title="The Shining Star"></iframe>
+        <div class="overlay">Click to view!</div>
+      </div>
+    </a>
+    <p>
+      Sketching through university life—where every line tells a story. This piece, النجم الساطع (Al Najm Al Saa'ta3), translated to "The Shining Star," reflects the brilliance found in learning, growth, and creativity.
+    </p>
+  </div>
+
+  <div class="project" id="project2">
+    <a href="https://sa8831.github.io/Comic/" target="_blank">
+      <div class="project-preview">
+        <iframe src="https://sa8831.github.io/Comic/" title="Beryllium oxide (BeO)"></iframe>
+        <div class="overlay">Click to view!</div>
+      </div>
+    </a>
+    <p>
+      The comic follows the developing friendship between Beryllium and Oxygen, imagined as high school students. Beryllium struggles to bond, reflecting isolation, while Oxygen bonds effortlessly—highlighting contrast and chemistry.
+    </p>
+  </div>
+
+  <div class="project" id="project3">
+    <a href="https://sa8831.github.io/AudioProject/" target="_blank">
+      <div class="project-preview">
+        <iframe src="https://sa8831.github.io/AudioProject/" title="The Treasure Trail Across Borders"></iframe>
+        <div class="overlay">Click to view!</div>
+      </div>
+    </a>
+    <p>
+      An online treasure hunt guided by a pirate across the UAE, Pakistan, Spain, and France. Players follow audio clues at each stop to unlock the next destination.
+    </p>
+  </div>
+
+  <div class="project" id="project4">
+    <a href="https://sa8831.github.io/Video_Project/" target="_blank">
+      <div class="project-preview">
+        <iframe src="https://sa8831.github.io/Video_Project/" title="The Final Exam"></iframe>
+        <div class="overlay">Click to view!</div>
+      </div>
+    </a>
+    <p>
+      This video explores test anxiety through a stylized classroom setting. The outcome shifts based on how the audience responds—mirroring the pressure and uncertainty students face.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer id="credits">
+    <h3>Credits</h3>
+    <ul>
+      <li>Arcane music tracks and themes © Riot Games / Fortiche Production.</li>
+      <li>\"Playground\" by Bea Miller used for artistic homage — not for commercial use.</li>
+      <li>\"When Everything Went Wrong\" composed by Alex Seaver (Mako) for Arcane — used respectfully for educational/portfolio purposes.</li>
+      <li>Custom font \"Arcane Nine\" provided by Chequered Ink — used via dafont.com.</li>
+      <li>Character silhouettes (Jayce, Jinx) drawn by Shamsa Alremeithi, inspired by Riot Games' Arcane promotional artwork — used non-commercially for thematic expression.</li>
+    </ul>
+    <p>This portfolio is a personal project by Shamsa Alremeithi. All referenced media is used purely for educational and non-commercial display purposes.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
