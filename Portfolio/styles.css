@@ -1,6 +1,6 @@
 body.zaun-mode {
   margin: 0;
-  background: #0c0c0c url('ZaunBG.PNG') center/cover no-repeat fixed;
+  background: #0c0c0c url('ZaunBG.png') center/cover no-repeat fixed;
   color: white;
   font-family: 'Courier Prime', monospace;
   overflow-x: hidden;
