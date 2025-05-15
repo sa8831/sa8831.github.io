@@ -1,23 +1,9 @@
-const jinx = document.querySelector('.jinx-silhouette');
-
-// Scroll animation for Jinx
-window.addEventListener('scroll', () => {
-  const trigger = window.innerHeight * 0.7;
-  const jinxTop = jinx.getBoundingClientRect().top;
-  if (jinxTop < trigger) {
-    jinx.classList.add('revealed');
-  } else {
-    jinx.classList.remove('revealed');
-  }
-});
-
-// Paintbrush stroke
-let painting = false;
-
+// =======================
+// Paintbrush Stroke Effect
+// =======================
 document.addEventListener('mousemove', (e) => {
   drawStroke(e);
 });
-
 
 function drawStroke(e) {
   const tag = e.target.tagName.toLowerCase();
@@ -28,9 +14,25 @@ function drawStroke(e) {
 
   const colors = ['#FF3CAC', '#00BFFF'];
   stroke.style.background = colors[Math.floor(Math.random() * colors.length)];
-  stroke.style.left = `${e.pageX}px`;
-  stroke.style.top = `${e.pageY}px`;
+
+  // Use clientX and clientY to stick to cursor
+  stroke.style.left = `${e.clientX - 10}px`; // offset to center stroke
+  stroke.style.top = `${e.clientY - 10}px`;
 
   document.body.appendChild(stroke);
-  setTimeout(() => stroke.remove(), 1000);
+  setTimeout(() => stroke.remove(), 500);
 }
+
+// =======================
+// Randomize Doodle Positions
+// =======================
+window.addEventListener('DOMContentLoaded', () => {
+  const doodles = document.querySelectorAll('.doodle');
+
+  doodles.forEach(doodle => {
+    const top = Math.floor(Math.random() * 80);   // 0%–80% vertically
+    const left = Math.floor(Math.random() * 80);  // 0%–80% horizontally
+    doodle.style.top = `${top}%`;
+    doodle.style.left = `${left}%`;
+  });
+});
