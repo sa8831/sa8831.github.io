@@ -30,3 +30,4 @@ If I were to improve the site further, I’d:
 - Enhance mobile responsiveness and add gesture support
 - Introduce more animated states for the doodles
 - Add silouettes of the show's characters
+- Expand more projects and include my Bio, skills, etc
