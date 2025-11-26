@@ -1,33 +1,33 @@
+# _Arcane_-Inspired Portfolio by Shamsa Alremeithi
 
-# Arcane Portfolio by Shamsa Alremeithi
+## 🎨 Project Description
 
-##  Project Description
-
-This project is a themed portfolio website inspired by *Arcane*, the steampunk action-adventure show on Netflix. It shows off four of my projects, all wrapped in a fun, interactive experience that flips between two totally different vibes: **Piltover (light mode)** and **Zaun (dark mode)**. The concept was inspired by my fascination with the contrasting worlds in Arcane. I wanted to create a portfolio that captures the tension between order and chaos, elegance and unpredictability.
-
-
-The website includes:
-
-* A toggle system using Piltover and Zaun logos instead of generic sun/moon icons
-* Click-based visual effects (dots connecting in light mode and spray paint in dark mode)
-* Custom silhouette animations of two characters as users scroll
-* Embedded interactive projects with hover effects
+This project is a themed portfolio website inspired by _Arcane_, the steampunk action-adventure show on Netflix. I am inspired by the show's chaotic, vibrant, and unpredictable world of **Zaun**, a dystopian city in the underground where people are rebellious, so I used that concept to put together the website where it shows the background of the undercity, with transparent doodles (from the show) floating.
 
 
-##  Process
+### Core Features:
 
-1. Created a single-page website structure (`index.html`)
-2. Coded light/dark mode toggling with `script.js`
-3. Applied custom styles in `styles.css`, including background animations and silhouettes
-4. Used click event listeners for decorative effects
-5. Embedded my actual project iframes from GitHub Pages
-7. Tweaked layout and spacing to ensure accessibility and mobile-friendliness
+-  **Cursor-based paintbrush trail** in bright Zaun-inspired colors
+-  **Floating doodles** that reposition randomly each visit
+-  **Project previews** with overlay text and call-to-action prompts
+-  *Mood-based design* (dark only — this version focuses entirely on Zaun)
 
-To simplify things and avoid GitHub Pages loading issues, I decided to place all project files (images, fonts, audio, code) in one directory. This avoided file path disruptions and allowed for smoother previewing.
+## 🛠️ Process
 
-## Reflection & Evaluation
+1. Structured layout using semantic HTML (`index.html`)
+2. Styled the interface with custom CSS (`styles.css`) including hover overlays, animations, and themed visuals
+3. Wrote JavaScript (`script.js`) to:
+   - Add animated paintbrush effects
+   - Randomize floating doodle positions
+   - Handle cursor tracking for paint strokes
+4. Compressed all assets (images, fonts, and previews) into one directory for simplicity and reliability across GitHub Pages
 
+## 💭 Reflection
 
-I was able to use everything I've been learning from the course, from creating visual themes to using JavaScript in this project. With light and dark modes that each have their own music, mood, and images, it feels incredibly immersive, which is one of its greatest advantages. I'm particularly pleased with the interactive elements that contribute to the Arcane style, such as the click effects and silhouettes.
+This portfolio was a chance to create something personal, messy, and expressive. It reflects both my skills in HTML/CSS/JS and my interest in worldbuilding through design. The combination of paint trails, floating visuals, and animated overlays helped transform what could’ve been a basic site into something playful and emotionally charged.
 
-However, in addition to smoothing out some of the animations and possibly allowing visitors to switch between more than just the theme, I would like to make the website more mobile-friendly. 
+If I were to improve the site further, I’d:
+- Enhance mobile responsiveness and add gesture support
+- Introduce more animated states for the doodles
+- Add silouettes of the show's characters
+- Expand more projects and include my Bio, skills, etc
